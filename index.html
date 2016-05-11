@@ -2,10 +2,122 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Two Robots Enter, One Robot Leaves</title>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/quiz.css">
 </head>
 <body>
 
-<script src="dist/bundle.js"></script>
+	<article id="game-container">
+		<h1>ROBOT THUN-...BATTLEDOME</h1>
+
+
+		<!-- Player 1 setup -->
+		<section id="p1setup" class="play-set-card">
+		      <div class="card__prompt row">
+        		<div class="header">Provide your name, human</div>
+        			<div class="field">
+          			<input type="text" autofocus="true" id="player-name" class="field__textinput">
+        			</div>
+      		</div>
+       		<div class="card__button">
+        		<a class="card__link btn btn--big btn--orange" id="nameWasInput" next="card--robot">
+          	<span class="header">Continue</span>
+        		</a>
+      		</div>
+		</section>
+		<section id="robot-select" class="card card--robot">
+      <div class="card__prompt page_head">
+        <div class="header">
+          <div>Select a robot</div>
+        </div>
+        <div class="choose_robot">
+          <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla optio magnam dicta doloremque, tempora corporis ad fugiat quia, natus commodi distinctio ut dolores delectus nemo, possimus sint beatae vitae et.</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-4 column">
+            <div class="card__button">
+              <div class="title header">SpaceBots</div>
+           </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="Starman">
+                <span class="btn__text">Starman</span>
+              </a>
+            </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="AtomicPowerRobot">
+                <span class="btn__text">Atomic Power Robot</span>
+              </a>
+            </div>
+
+          <div class="col-sm-4 column">
+            <div class="card__button">
+              <div class="title header">Defective Robots</div>
+            </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="Marvin">
+                <span class="btn__text">Marvin</span>
+              </a>
+            </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="Gir">
+                <span class="btn__text">Gir</span>
+              </a>
+            </div>
+
+
+          <div class="col-sm-4 column">
+            <div class="card__button">
+              <div class="title header">Generic Robots</div>
+            </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="Punchy">
+                <span class="btn__text">Punchy</span>
+              </a>
+            </div>
+
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" id="Gunner">
+                <span class="btn__text">Gunner</span>
+              </a>
+            </div>
+          	</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__button col-sm-4">
+        <a class="card__back btn btn--big"
+           href="#"
+           previous="card--name">
+          <span class="btn__prompt">&lt;</span>
+          <span class="btn__text">Back</span>
+        </a>
+      </div>
+
+      </div>
+      <div class="card__button col-sm-4">
+        <a class="card__link btn btn--big btn--orange" next="card--weapon" nextForMagic="card--battleground--for--magic"id ="classHasBeenSelected">
+          <span class="btn__prompt">></span>
+          <span class="btn__text">Continue</span>
+        </a>
+      </div>
+    </section>
+
+
+
+</article>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- // <script src="dist/bundle.js"></script> -->
 </body>
 </html>

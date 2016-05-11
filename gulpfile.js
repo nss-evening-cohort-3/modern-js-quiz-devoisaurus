@@ -12,7 +12,7 @@
   var cache = require('gulp-cache');
 
   var customOpts = {
-    entries: ['./javascripts/main.js'],
+    entries: ['./javascripts/quiz.js'],
       debug: true
     };
   var opts = assign({}, watchify.args, customOpts);
